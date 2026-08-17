@@ -35,7 +35,7 @@ export default function PrivacyPage() {
             <article className="privacy-summary__item">
               <span>02</span>
               <h2>Brouillon sur l’appareil</h2>
-              <p>Le navigateur utilise un stockage local nommé « martin-quote-draft » pour permettre de reprendre le parcours.</p>
+              <p>Le navigateur utilise un stockage local nommé « saur-quote-draft » pour permettre de reprendre le parcours.</p>
             </article>
             <article className="privacy-summary__item">
               <span>03</span>

@@ -70,7 +70,7 @@ test("keeps the principal public routes server-rendered", async () => {
 
   const pages = await Promise.all(routes.map((route) => htmlFor(route)));
   for (const html of pages) {
-    assert.match(html, /Martin/i);
+    assert.match(html, /Saur/i);
     assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton/i);
   }
 });

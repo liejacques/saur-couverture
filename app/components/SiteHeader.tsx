@@ -54,8 +54,8 @@ export function SiteHeader() {
     <>
       <header className="site-header">
         <a className="skip-link" href="#main-content">Aller au contenu</a>
-        <Link className="brand" href="/" aria-label="Martin, accueil">
-          <span className="brand__name">MARTIN</span>
+        <Link className="brand" href="/" aria-label="Saur, accueil">
+          <span className="brand__name">SAUR</span>
           <span className="brand__trade">Couverture · Zinguerie</span>
         </Link>
 
@@ -89,7 +89,7 @@ export function SiteHeader() {
         {open && (
           <div aria-labelledby="mobile-menu-title" className="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
             <div className="mobile-menu__top">
-              <span className="brand__name" id="mobile-menu-title">MARTIN</span>
+              <span className="brand__name" id="mobile-menu-title">SAUR</span>
               <button
                 aria-label="Fermer le menu"
                 className="menu-close"

@@ -7,7 +7,7 @@ import { SiteHeader } from "./components/SiteHeader";
 import { projects, services } from "./data/siteData";
 
 export const metadata: Metadata = {
-  title: "Martin — Couverture & zinguerie à Colmar",
+  title: "Saur — Couverture & zinguerie à Colmar",
   description: "Diagnostic, réparation et rénovation de toiture à Colmar et dans la vallée de Munster.",
 };
 

@@ -44,7 +44,7 @@ export async function generateMetadata({
     openGraph: {
       type: "article",
       locale: "fr_FR",
-      siteName: "Démonstration Martin Couverture",
+      siteName: "Démonstration Saur Couverture",
       url: pageUrl,
       title: socialTitle,
       description: `Contenu fictif à adapter. ${service.short}`,

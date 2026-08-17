@@ -5,7 +5,7 @@ import { SiteHeader } from "@/app/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "Mentions légales",
-  description: "État des informations légales à compléter avant la publication commerciale du site de démonstration Martin.",
+  description: "État des informations légales à compléter avant la publication commerciale du site de démonstration Saur.",
 };
 
 const legalSections = [

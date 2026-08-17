@@ -68,7 +68,7 @@ export async function generateMetadata({
     ? new URL(project.image, origin).toString()
     : undefined;
   const title = `Démonstration — ${project.title} — ${project.location}`;
-  const socialTitle = `${title} | Martin Couverture`;
+  const socialTitle = `${title} | Saur Couverture`;
   const description = `Cas fictif et composite. ${project.short} ${project.surface}, ${project.material}, ${project.duration}.`;
   const socialImage = imageUrl
     ? [{ url: imageUrl, alt: project.alt }]
@@ -132,7 +132,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 <h1>{project.title}</h1>
                 <p className="project-hero__lead">{project.short}</p>
                 <p className="site-disclaimer" role="note">
-                  Les données et le récit ci-dessous sont composites. Ils ne décrivent aucun chantier réel de Martin.
+                  Les données et le récit ci-dessous sont composites. Ils ne décrivent aucun chantier réel de Saur.
                 </p>
               </div>
 

@@ -16,12 +16,12 @@ export async function generateMetadata(): Promise<Metadata> {
   let origin: URL | undefined;
   try { if (host) origin = new URL(`${protocol}://${host}`); } catch { origin = undefined; }
   const image = origin ? new URL("/og.jpg", origin).toString() : undefined;
-  const title = "Démonstration — Martin, couverture & zinguerie";
+  const title = "Démonstration — Saur, couverture & zinguerie";
   const description = "Prototype fictif d’un site de couvreur-zingueur à Colmar : contenus, coordonnées et réalisations à remplacer.";
 
   return {
     metadataBase: origin,
-    title: { default: title, template: "%s | Démonstration Martin Couverture" },
+    title: { default: title, template: "%s | Démonstration Saur Couverture" },
     description,
     robots: { index: false, follow: false, noarchive: true, nocache: true },
     openGraph: {
@@ -29,7 +29,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       locale: "fr_FR",
       type: "website",
-      images: image ? [{ url: image, width: 1736, height: 907, alt: "Martin — Une toiture saine. Des explications claires." }] : [],
+      images: image ? [{ url: image, width: 1734, height: 907, alt: "Saur — Une toiture saine. Des explications claires." }] : [],
     },
     twitter: {
       card: image ? "summary_large_image" : "summary",

@@ -21,8 +21,8 @@ export function SiteFooter() {
 
       <div className="site-footer__main">
         <div className="site-footer__brand">
-          <Link className="brand brand--footer" href="/" aria-label="Martin, retour à l’accueil">
-            <span className="brand__name">MARTIN</span>
+          <Link className="brand brand--footer" href="/" aria-label="Saur, retour à l’accueil">
+            <span className="brand__name">SAUR</span>
             <span className="brand__trade">Couverture · Zinguerie</span>
           </Link>
           <p className="site-footer__tagline">
@@ -48,7 +48,7 @@ export function SiteFooter() {
       </div>
 
       <div className="site-footer__bottom">
-        <span>Prototype Martin · aucune preuve commerciale publiée</span>
+        <span>Prototype Saur · aucune preuve commerciale publiée</span>
         <nav aria-label="Informations légales">
           {utilityLinks.map((item) => (
             <Link href={item.href} key={item.href}>{item.label}</Link>

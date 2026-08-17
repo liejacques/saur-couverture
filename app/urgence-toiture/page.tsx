@@ -52,7 +52,7 @@ export default function EmergencyRoofPage() {
               src="/images/gutter-detail.jpg"
               width="1200"
             />
-            <figcaption className="page-hero__caption">Image illustrative · pas une intervention Martin</figcaption>
+            <figcaption className="page-hero__caption">Image illustrative · pas une intervention Saur</figcaption>
           </figure>
         </section>
 

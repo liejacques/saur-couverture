@@ -48,7 +48,7 @@ export default function ContactPage() {
               <h2>Adresse de démonstration.</h2>
               <p>Cette adresse utilise un domaine réservé et ne correspond à aucune boîte de l’entreprise.</p>
               <span className="contact-card__value">
-                bonjour@martin-couverture.example
+                bonjour@saur-couverture.example
               </span>
               <Link className="text-link" href="/confidentialite">Comment les données seront traitées</Link>
             </article>

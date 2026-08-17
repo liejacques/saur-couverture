@@ -13,14 +13,14 @@ export const metadata: Metadata = {
   title,
   description,
   openGraph: {
-    title: `${title} | Martin Couverture`,
+    title: `${title} | Saur Couverture`,
     description,
     type: "website",
     locale: "fr_FR",
   },
   twitter: {
     card: "summary",
-    title: `${title} | Martin Couverture`,
+    title: `${title} | Saur Couverture`,
     description,
   },
 };

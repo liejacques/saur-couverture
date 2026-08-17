@@ -61,7 +61,7 @@ export function QuoteWizard() {
   useEffect(() => {
     const hydrateFromClient = () => {
       try {
-        const saved = window.localStorage.getItem("martin-quote-draft");
+        const saved = window.localStorage.getItem("saur-quote-draft");
         const nextData = saved ? { ...initialData, ...JSON.parse(saved), consent: false } : initialData;
         const parameters = new URLSearchParams(window.location.search);
         const servicePrefill = prefillByService[parameters.get("prestation") ?? ""];
@@ -92,7 +92,7 @@ export function QuoteWizard() {
 
   useEffect(() => {
     if (submitted || !hydrated) return;
-    try { window.localStorage.setItem("martin-quote-draft", JSON.stringify(data)); }
+    try { window.localStorage.setItem("saur-quote-draft", JSON.stringify(data)); }
     catch { /* Ignore storage restrictions. */ }
   }, [data, hydrated, submitted]);
 
@@ -141,7 +141,7 @@ export function QuoteWizard() {
     const message = validateStep();
     if (message) return setError(message);
     setSubmitted(true);
-    window.localStorage.removeItem("martin-quote-draft");
+    window.localStorage.removeItem("saur-quote-draft");
   };
 
   const needLabel = data.sourceService || needs.find(([value]) => value === data.need)?.[1] || "À préciser";
@@ -151,7 +151,7 @@ export function QuoteWizard() {
     <main className="quote-app" id="main-content">
       <header className="quote-header">
         <Link className="brand brand--quote" href="/" aria-label="Retour à l’accueil">
-          <span className="brand__name">MARTIN</span><span className="brand__trade">Couverture · Zinguerie</span>
+          <span className="brand__name">SAUR</span><span className="brand__trade">Couverture · Zinguerie</span>
         </Link>
         <span className="quote-header__promise">Simulation en 2 minutes</span>
         <Link href="/contact">Besoin d’aide ? <strong>Contact démo</strong></Link>
