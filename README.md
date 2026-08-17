@@ -25,6 +25,14 @@ npm run lint
 npm test
 ```
 
+## Déployer sur Vercel
+
+Le dépôt contient une cible Vercel dédiée via Nitro, sans retirer la cible Sites/Cloudflare.
+
+Dans Vercel, importer le dépôt `liejacques/saur-couverture` et utiliser la racine du dépôt. Le fichier `vercel.json` configure automatiquement la commande `npm run build:vercel`.
+
+Le framework est déclaré comme `Nitro`. Aucun sous-dossier `site` ne doit être sélectionné et l’option **Output Directory** doit rester sans surcharge : Nitro génère directement le format Vercel dans `.vercel/output`.
+
 ## Avant une publication commerciale
 
 Cette version est volontairement en `noindex`. Il faut remplacer l’identité, les coordonnées, les photos, les cas chantier, les avis, la zone, les délais et toutes les preuves d’assurance ou de qualification par des éléments vérifiés. Le formulaire ne transmet actuellement aucune donnée : il conserve seulement un brouillon dans le navigateur.
